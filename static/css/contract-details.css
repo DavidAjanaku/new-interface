@@ -1,0 +1,347 @@
+/*
+0 - 600px: PHONE
+600 - 900PX: Tablet portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + : Big Desktop
+*/
+:root {
+    --color-primary: #28B34B;
+    --color-accent: #BEFACD;
+    --color-dark: #263238;
+    --color-grey: #434C4D;
+    --color-light-grey: #f7f7f7;
+    --default-font: 'Montserrat Alternates', sans-serif;
+    --default-font-2: 'Secular One', sans-serif;
+    --default-font-size: 1.3rem;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@media only screen and (min-width: 112.5em) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media only screen and (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+}
+
+@media screen and (max-width: 56.25em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+body {
+    font-family: var(--default-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--color-grey);
+}
+
+main {
+    width: 100%;
+}
+
+.text-main {
+    font-family: var(--default-font-2);
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 900;
+    color: var(--color-dark);
+}
+
+.text-sub {
+    font-size: var(--default-font-size);
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.heading__main {
+    font-family: var(--default-font-2);
+    font-size: 5rem;
+    text-transform: capitalize;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1;
+    display: block;
+    word-spacing: .8rem;
+}
+
+.heading__sub {
+    display: block;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 100;
+    width: 100%;
+}
+
+.heading-secondary,
+.heading-secondary-w {
+    font-family: var(--default-font-2);
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--color-dark);
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.heading-secondary-w {
+    color: #FAFFFB;
+}
+
+.heading-tertiary {
+    font-family: var(--default-font-2);
+    text-align: center;
+    text-transform: capitalize;
+    color: #FAFFFB;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.u-center-text {
+    text-align: center;
+}
+
+.u-margin-bottom-huge {
+    margin-bottom: 6rem;
+}
+
+.u-margin-bottom-medium {
+    margin-bottom: 4rem;
+}
+
+.u-margin-bottom-small {
+    margin-bottom: 1.5rem;
+}
+
+.u-margin-bottom-tiny {
+    margin-bottom: .8rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/* CONTRACT DETAILS */
+.contract-detail {
+    max-width: 95%;
+    border-radius: 1.2rem;
+    border: 1px solid #ccc;
+    margin: 5rem auto;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .25);
+    padding: 3rem 5rem;
+
+
+
+}
+
+@media only screen and (max-width: 56.25em) {
+    .contract-detail {
+        width: 100%;
+        border-radius: 0;
+        border: 0;
+        box-shadow: none;
+        padding: 3rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contract-detail__mid {
+        flex-direction: column;
+    }
+}
+
+.contract-detail__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.contract-detail__published {
+    display: flex;
+    justify-content: inherit;
+    align-items: inherit;
+    gap: 1rem;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+.contract-detail__icon-small {
+    width: 5rem;
+    height: 5rem;
+    fill: #00b894;
+}
+
+.contract-detail__icon {
+    width: 5rem;
+    height: 5rem;
+    fill: var(--color-dark);
+}
+
+.contract-detail__top {
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.contract-detail__project p{
+    width: 70%;
+}
+
+.contract-detail__mid {
+    margin-top: 5rem;
+}
+
+.contract-detail__project {
+    display: grid;
+    grid-template-rows: auto 3rem;
+    flex: 2;
+}
+
+.contract-detail__project div:first-child {
+    grid-row: 1 / span 2;
+}
+
+.contract-detail__project div:last-child {
+    grid-row: 3 / -1;
+}
+
+.contract-detail__job {
+    flex: 1;
+}
+
+.contract-detail__group:not(:last-child) {
+    margin-bottom: 1.2rem;
+}
+
+.contract-detail__mid {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.contract-detail__box {
+    flex: 1;
+    color: var(--color-dark);
+    padding: 2em;
+}
+
+.contract-detail__box figure {
+    /* text-align: center; */
+    margin: 1.5rem 0;
+}
+
+.contract-detail__box div {
+    margin-bottom: 1.2rem;
+}
+
+
+
+
+.contract-detail__box--1 {
+    background-color: #81ecec;
+}
+
+.contract-detail__box--2 {
+    background-color: #00cec9;
+}
+
+.contract-detail__box--3 {
+    background-color: #00b894;
+}
+
+.contract-detail__bottom {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 5rem repeat(3, 10rem);
+}
+
+@media screen and (max-width: 600px) {
+    .contract-detail__bottom {
+        grid-template-rows: 5rem repeat(3, 10rem) 8rem;
+
+    }
+}
+
+.contract-detail__bottom h2 {
+    grid-area: 1 / 1 / span 1 / -1;
+}
+
+.contract-detail__project {
+    grid-area: 2 / 1 / -1 / -1;
+}
+
+
+@media screen and (max-width: 600px) {
+    .contract-detail__project {
+        grid-area: 2 / 1 / 5 / -1;
+    }
+}
+
+
+.confirm-box {
+    background-color: #00b894;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+    grid-area: 4 / 4 / -1 / -1;
+    cursor: pointer;
+    transition: background-color 250ms;
+}
+
+
+@media screen and (max-width: 600px) {
+    .confirm-box {
+        -webkit-clip-path: none;
+        clip-path: none;
+        grid-area: 5 / 1 / -1/ -1;
+    }
+
+    .contract-detail__mid {
+    width: 300px;
+}
+}
+
+.confirm-box:hover {
+    background-color: #16a085;
+}
+
+.confirm-box a {
+    color: white;
+    text-transform: uppercase;
+}

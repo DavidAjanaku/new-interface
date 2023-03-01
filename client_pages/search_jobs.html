@@ -1,0 +1,512 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Jobs</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/static/images/logos/1615836169185_lancerspoint-logo-2.png" type="image/x-icon">
+        
+        
+    <link rel="shortcut icon" href="/static/images/lancerspoint-2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        
+
+    
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/style.css">
+<link rel="shortcut icon" href="/static/images/lancerspoint-2.png" type="image/x-icon">
+<link rel="stylesheet" href="/static/css/user_css/search.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<style>
+    .my-btn {
+        background-color: #28b34b;
+        /* Green */
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 10px 22px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
+        transition-duration: 0.4s;
+    }
+
+    .my-btn {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .my-btn:hover {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .filter-result__wrapper{
+    display: flex;
+    /* background: green; */
+    margin-top: 9vh;
+    height: 100%; 
+}
+
+ .card--section{
+           padding: 10px !important;
+        }
+
+</style>
+
+<link rel="stylesheet" href="/static/css/user_css/lancers-profile-page.css"> 
+<link rel="stylesheet" href="/static/css/user_css/search.css"> 
+<link rel="stylesheet" href="/static/css/nav-header.css">
+<link rel="stylesheet" href="/static/css/main.css">
+
+</head>
+<body>
+    
+    
+    
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/static/header/css/style.css">
+    
+</head>
+
+<body>
+    <input type="checkbox" id="toggle" hidden>
+    <label class="toggle-btn" for="toggle">
+        <span class="line"></span>
+    </label>
+    <header class="header-alt">
+        <a href="/">
+            <img src="/static/header/images/logo.png" alt="logo" class="logo">
+        </a>
+
+        
+            
+        <form class="header-alt__search">
+            <input type="text" placeholder="Search jobs" class="header-alt__input">
+            <button type="submit" class="header-alt__search-btn">
+                <span class="header-alt__icon material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </form>
+
+        <nav class="header-alt__nav">
+            <a href="/lancer/search-jobs/" class="header-alt__link">Search for job</a>
+            <a href="/lancer/projects/listings/" class="header-alt__link">Work Diary</a>
+            <a href="/chat/chat-contact/" class="header-alt__link">Messages</a>
+            <a href="/account/logout/" class="header-alt__link">Log-out</a>
+        </nav>        
+        <a href="/account/contact-settings/">
+            <div class="header-alt__profile">
+                <img src="/media/users/2022/12/26/31AA18F4-EDBC-441D-A034-8E3BE1BED4A4.jpeg" alt="profile photo" class="header-alt__profile-img">
+            </div>
+        </a>
+        
+
+
+    </header>
+
+</body>
+
+</html>
+
+
+        <div class="filter_result_box">
+            <span class="filter_result ">
+                <h1>Top <span> "Jobs" </span> </h1>
+            </span>
+            <div class="filterpop_box">
+                <a href="#filterpop" class="mobile_filter">
+                    <span>
+                        Filter
+                    </span>
+                </a>
+            </div>
+            <div class="mobile-filter-popup  mobile--hid" id="filterpop">
+                <div class="mobile-filter--content">
+                    <div class="mobile-filter__head">
+                        <p>Filter</p>
+
+                        <a href="#close" class="closepop">
+                            &times
+                        </a>
+                    </div>
+                    <div class="mobile-filter__accordion">
+                        <form method="get">
+
+                            <div class="accordion-container">
+                                <button type="button" class="accordion">Payment Type</button>
+                                <div class="accordion-content">
+                                    <div class="categories__links">
+                                        <select name="paymentMethod" class="categories__links" id="id_paymentMethod">
+  <option value="" selected>---------</option>
+
+  <option value="fixed">Pay A Fixed Price</option>
+
+  <option value="hourly">Pay By The Hour</option>
+
+</select>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="accordion">Experience Level</button>
+                                <div class="accordion-content">
+                                    <div class="categories__links">
+                                        <select name="lancerExperience" class="categories__links" id="id_lancerExperience">
+  <option value="" selected>---------</option>
+
+  <option value="entry">Entry</option>
+
+  <option value="intermediate">Intermediate</option>
+
+  <option value="expert">Expert</option>
+
+</select>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="accordion">Project Time</button>
+                                <div class="accordion-content">
+                                    <div class="categories__links">
+                                        <select name="time_frame" class="categories__links" id="id_time_frame">
+  <option value="" selected>---------</option>
+
+  <option value="less than a month">Less Than 1 Month</option>
+
+  <option value="1 to 3 months">1 to 3 Months</option>
+
+  <option value="more that 3 months">More Than 3 Months</option>
+
+</select>
+                                    </div>
+                                </div>
+                            </div>
+                            <input class="my-btn" type="submit" value="Filter">
+
+
+                    </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="filter-result__container  filter-result__wrapper">
+
+                <div class="filter_dropdown__left mobile--hide_dropdownleft">
+                    <span id="filter_head">Filter By</span> <br>
+                    <section>
+                        <form method="get">
+
+                            <div class="accordion-container">
+                                <button type="button" class="accordion">Payment Type</button>
+                                <div class="accordion-content">
+                                    <div class="categories__links">
+                                        <select name="paymentMethod" class="categories__links" id="id_paymentMethod">
+  <option value="" selected>---------</option>
+
+  <option value="fixed">Pay A Fixed Price</option>
+
+  <option value="hourly">Pay By The Hour</option>
+
+</select>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="accordion">Experience Level</button>
+                                <div class="accordion-content">
+                                    <div class="categories__links">
+                                        <select name="lancerExperience" class="categories__links" id="id_lancerExperience">
+  <option value="" selected>---------</option>
+
+  <option value="entry">Entry</option>
+
+  <option value="intermediate">Intermediate</option>
+
+  <option value="expert">Expert</option>
+
+</select>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="accordion">Project Time</button>
+                                <div class="accordion-content">
+                                    <div class="categories__links">
+                                        <select name="time_frame" class="categories__links" id="id_time_frame">
+  <option value="" selected>---------</option>
+
+  <option value="less than a month">Less Than 1 Month</option>
+
+  <option value="1 to 3 months">1 to 3 Months</option>
+
+  <option value="more that 3 months">More Than 3 Months</option>
+
+</select>
+                                    </div>
+                                </div>
+                            </div>
+                            <input class="my-btn" type="submit" value="Filter">
+
+                    </section>
+
+
+                </div>
+                <div class="filter_result-right">
+                    <div class="filter-result__contents">
+                        <div class="filter_search-box">
+                            <div class="search-box">
+                                <input type="text" name="title" placeholder="Search By title..." class="search-input" id="id_title">
+
+                                <button type="submit" class="search-button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        </form>
+                        <div class="advanced_result-contents">
+                            <h1 class="advanced-head">
+                                Advanced Search
+                            </h1>
+                            
+                            <div class="card--section">
+                                <div class="freelancer-tile">
+                                    <div class="flex-1">
+                                        <div class="d-flex">
+                                            <div class="freelancer-title-identity">
+                                                <div class="identity-portrait">
+                                                    <div class="profile-photo">
+                                                        <div class="presence-container">
+                                                            <img src="/static/images/user_profile.jpg" alt="">
+                                                            <span class="presence-indicator"></span>
+
+                                                        </div>
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        <button class="contact-btn">
+                                                            <a href="/lancer/submit-proposal/demo-job/">
+                                                                Bid
+                                                            </a>
+                                                        </button>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="identity-content">
+                                                <div class="identity-name">
+                                                    Lancer
+                                                </div>
+                                                <p class="freelancer-title  client-proposal">
+                                                    <strong>Demo Job</strong>
+                                                </p>
+                                            </div>
+
+                                            <div class="profile-stats_wrapper">
+                                                <div class="profile-container">
+                                                    <ul>
+                                                        <li class="badge e-flex"> <span class="badge-icon"></span>Pay by the hour</li>
+                                                        <li class="badge">1 to 3 months</li>
+                                                        <li class="badge">Intermediate</li>
+                                                        <li class="badge">
+                                                            0 Bid(s)
+                                                            
+                                                        </li>
+                                                        
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="overview">
+                                                This is a very simple job
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="freelancer-skills">
+                                    <div class="content">
+                                        <button class="prev" class="btn">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </button>
+                                        <div class="con-cards">
+                                            
+                                            <div class="card">
+                                                <div class="con-text">
+                                                    <p>python</p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="card">
+                                                <div class="con-text">
+                                                    <p>demo</p>
+                                                </div>
+                                            </div>
+                                            
+
+                                        </div>
+                                        <button class="next" class="btn">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+
+
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="pagination">
+    <span class="">
+        
+    </span>
+    <span class="active">
+        1
+    </span> 
+    <span>
+    
+    </span>
+</div>
+
+        </div>
+        <script src="/static/script/badge-scroll.js"></script>
+        <script src="/static/script/accordion.js"></script>
+        
+
+
+
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="/static/A/style.css">
+</head>
+
+<body>
+     <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__lists">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">about us</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">feedback</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">community</a>
+          </li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">trust, safty & security</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">help & support</a>
+          </li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">terms of service</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">privacy policy</a>
+          </li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">about us</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">feedback</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">community</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__socials">
+        <span>Follow Us</span>
+        <div class="footer__icons">
+          <a href="#">
+            <svg class="footer__icon">
+              <use xlink:href="/static/A/icons/socials.svg#icon-facebook-with-circle"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer__icon">
+              <use xlink:href="/static/A/icons/socials.svg#icon-instagram-with-circle"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer__icon">
+              <use xlink:href="/static/A/icons/socials.svg#icon-linkedin-with-circle"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer__icon">
+              <use xlink:href="/static/A/icons/socials.svg#icon-twitter-with-circle"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>
+          &copy; 2022 - <span id="copy-year"></span>
+          <script>
+            document.getElementById("copy-year").textContent =
+              new Date().getFullYear();
+          </script>
+          Lancer point® Global Inc
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+ 
+
+ 
+ 
+ 
+    <script src="/static/js/nav-header.js"></script>
+</body>
+
+</html>

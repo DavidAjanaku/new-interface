@@ -1,0 +1,678 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/static/images/logos/1615836169185_lancerspoint-logo-2.png" type="image/x-icon">
+        
+        
+    <link rel="shortcut icon" href="/static/images/lancerspoint-2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+     
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    
+<link rel="stylesheet" href="/static/settings/css/styles.css">
+<script src="/static/settings/js/script.js" type="module"></script>
+<link rel="stylesheet" href="/static/settings/css/style.css">
+<link rel="stylesheet" href="search_job.css">
+
+
+
+<style>
+    @media only screen and (max-width: 600px) {
+        .user-settings-main {
+
+            height: 180vh;
+        }
+    }
+
+    .mult-select-tag {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+        --tw-shadow-color: 0 1px 3px 0 var(--tw-shadow-color),
+            0 1px 2px -1px var(--tw-shadow-color);
+        --border-color: rgb(218, 221, 224);
+        font-family: Verdana, sans-serif;
+    }
+
+    .mult-select-tag .wrapper {
+        width: 100%;
+    }
+
+    .mult-select-tag .body {
+        display: flex;
+        border: 1px solid var(--border-color);
+        background: #fff;
+        min-height: 5.15rem;
+        width: 100%;
+        min-width: 14rem;
+    }
+
+    .mult-select-tag .input-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 auto;
+        padding: 0.1rem;
+    }
+
+    .mult-select-tag .input-body {
+        display: flex;
+        width: 100%;
+    }
+
+    .mult-select-tag .input {
+        flex: 1;
+        background: 0 0;
+        border-radius: 0.25rem;
+        padding: 0.45rem;
+        margin: 10px;
+        color: #2d3748;
+        outline: 0;
+        border: 1px solid var(--border-color);
+    }
+
+    .mult-select-tag .btn-container {
+        color: #e2ebf0;
+        padding: 0.5rem;
+        display: flex;
+        border-left: 1px solid var(--border-color);
+    }
+
+    .mult-select-tag button {
+        cursor: pointer;
+        width: 100%;
+        color: #718096;
+        outline: 0;
+        height: 100%;
+        border: none;
+        padding: 0;
+        background: 0 0;
+        background-image: none;
+        -webkit-appearance: none;
+        text-transform: none;
+        margin: 0;
+    }
+
+    .mult-select-tag button:first-child {
+        width: 1rem;
+        height: 90%;
+    }
+
+    .mult-select-tag .drawer {
+        position: absolute;
+        background: #fff;
+        max-height: 15rem;
+        z-index: 40;
+        top: 98%;
+        width: 100%;
+        overflow-y: scroll;
+        border: 1px solid var(--border-color);
+        border-radius: 0.25rem;
+    }
+
+    .mult-select-tag ul {
+        list-style-type: none;
+        padding: 0.5rem;
+        margin: 0;
+    }
+
+    .mult-select-tag ul li {
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
+    }
+
+    .mult-select-tag ul li:hover {
+        background: rgb(243 244 246);
+    }
+
+    .mult-select-tag .item-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #2c7a7b;
+        padding: 0.2rem 0.4rem;
+        margin: 0.2rem;
+        font-weight: 500;
+        border: 1px solid #81e6d9;
+        background: #e6fffa;
+        border-radius: 9999px;
+    }
+
+    .mult-select-tag .item-label {
+        max-width: 100%;
+        line-height: 1;
+        font-size: 1em;
+        font-weight: 400;
+        flex: 0 1 auto;
+        color: #2c7a7b;
+    }
+
+    .mult-select-tag .item-close-container {
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: row-reverse;
+    }
+
+    .mult-select-tag .item-close-svg {
+        width: 1rem;
+        margin-left: 0.5rem;
+        height: 1rem;
+        cursor: pointer;
+        border-radius: 9999px;
+        display: block;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .mult-select-tag .shadow {
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+            var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+
+    .mult-select-tag .rounded {
+        border-radius: 0.375rem;
+    }
+</style>
+
+
+</head>
+<body>
+    
+    
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/static/header/css/style.css">
+    
+</head>
+
+<body>
+    <input type="checkbox" id="toggle" hidden>
+    <label class="toggle-btn" for="toggle">
+        <span class="line"></span>
+    </label>
+    <header class="header-alt">
+        <a href="/">
+            <img src="/static/header/images/logo.png" alt="logo" class="logo">
+        </a>
+
+        
+            
+        <form class="header-alt__search">
+            <input type="text" placeholder="Search jobs" class="header-alt__input">
+            <button type="submit" class="header-alt__search-btn">
+                <span class="header-alt__icon material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </form>
+
+        <nav class="header-alt__nav">
+            <a href="/lancer/search-jobs/" class="header-alt__link">Search for job</a>
+            <a href="/lancer/projects/listings/" class="header-alt__link">Work Diary</a>
+            <a href="/chat/chat-contact/" class="header-alt__link">Messages</a>
+            <a href="/account/logout/" class="header-alt__link">Log-out</a>
+        </nav>        
+        <a href="/account/contact-settings/">
+            <div class="header-alt__profile">
+                <img src="/media/users/2022/12/26/31AA18F4-EDBC-441D-A034-8E3BE1BED4A4.jpeg" alt="profile photo" class="header-alt__profile-img">
+            </div>
+        </a>
+        
+
+
+    </header>
+
+</body>
+
+</html>
+
+<div class="search_container">
+    <div class="search_container__flex">
+        <div class="search_container__content ">
+            <div class="col-1">
+                <div class="col-1--search__jobs flex">
+                    <div class="search__job--box ">
+                        <form action="" class="search__form">
+                            <input class="pl-3 h-10 appearance-none block w-full text-gray-700 leading-tight focus:outline" type="text" placeholder="Search for jobs">
+                            <button class="bg-green w-10"><i class="fa fa-search text-white search_icon"></i></button>
+                        </form>
+                    </div>
+                    <div class="filter-and-search__btns">
+                        <button class="bg-white text-green-600 font-semibold py-2 px-4 border border-grey-500 hover:shadow-xl rounded">
+                            <i class="fa fa-filter"></i> Filters
+                          </button>
+                          <button class="bg-white text-green-600 font-semibold py-2 px-4 border border-grey-500 hover:shadow-xl rounded">
+                            <i class="fa fa-folder"></i>
+                             Saved search
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="job-cards__container flex">
+                    <span class="job_cards">photography 
+                        <i class="fa fa-close"></i></span>
+                        <span class="job_cards">Web developer
+                            <i class="fa fa-close"></i></span>
+                            <span class="job_cards">graphic designer
+                                <i class="fa fa-close"></i>
+                              </span>
+                        <span class="inline-block px-3 py-2 text-sm font-semibold text-green mr-2 mb-2"><a href="#">
+                            <h3>Clear filters</h3>
+                          </a></span>
+                </div>
+            </div>
+
+            <div class="col-3  flex">
+                <div class="job_found_value">
+                    <i class="fa fa-rss text-green-600"></i>
+                    <span class="job_value">5,3634 </span>
+                    <span class="job_found--data">Jobs found</span>
+                </div>
+                <div class="job_found-sort  flex  flex-wrap">
+                    <div class="flex flex-wrap sort-select">
+                        <span class="mx-3">Sort :</span>
+                        <select class="block appearance-none " id="grid-state">
+                            <option>New Mexico</option>
+                            <option>Missouri</option>
+                            <option>Texas</option>
+                          </select>
+                    </div>
+                    <div class=" hidd">
+                        <span class="mx-3">View :</span>
+
+                        <select class="block appearance-none " id="grid-state">
+                            <option>Filter</option>
+                            <option>Missouri</option>
+                            <option>Texas</option>
+                          </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Jobs-card -->
+
+        <div class="job-card__wrapper">
+            <div class="job-card__contents flex">
+                <div class="col-1">
+                    <div class="text-gray"><h1>Adegoke Mmarama</h1></div>
+                        <p class=""><span class="text-black">Fixed Price-</span> Entry level
+                            -Est budgt $25</p>
+                            <p class="text-gray-700 text-base">Immediate need-web research, I am seeking a professional to assist in
+                                web research and phone calls to create an excel sheet.
+                                Need to find companies in Romania make uniforms, especially for private securities companies and the
+                                army; for each company, I need the production manager's email contact.</p>
+                </div>
+                <div class="col-2">
+                    <div class="text-sm">
+                        <p class="text-gray-900 job-name">Jonathan Reinink</p>
+                        <p class="text job-time">Aug 18</p>
+                      </div>
+                      <div class="job-cards__container flex">
+                        <span class="job_cards">photography 
+                          </span>
+                            <span class="job_cards">Web developer
+                              </span>
+                                <span class="job_cards">graphic designer
+                                  
+                                  </span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- pagination -->
+    <div class="pagination-wrapper">
+        <div class="pagination-flex flex">
+            <div class="ml-1">
+                <span class="mx-3">Jobs per page :</span>
+                <select class="block appearance-none " id="grid-state">
+                  <option>10</option>
+                  <option>Missouri</option>
+                  <option>Texas</option>
+                </select>
+              </div>
+<div class="ml-2">
+    <nav class="flex shadow-sm ">
+        <a href="#" class="previous" aria-label="Previous">
+          <!-- Heroicon name: chevron-left -->
+          <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+          </svg>
+        </a>
+        <a href="#" class="-ml-px relative  ">
+          1
+        </a>
+        <a href="#" class="-ml-px relative  ">
+          2
+        </a>
+        <a href="#" class="hidden md:inline-flex -ml-px relative items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 ">
+          3
+        </a>
+        <span class="-ml-px relative  font-medium text-gray-700">
+         <span>
+          ...
+         </span>
+        </span>
+        <a href="#" class="hidden md:inline-flex -ml-px relative items-center px-4 py-2 border border-gray-300 bg-white text-sm leading-5 ">
+          8
+        </a>
+        <a href="#" class="-ml-px relative  ">
+          9
+        </a>
+        <a href="#" class="-ml-px relative  ">
+          10
+        </a>
+        <a href="#" class="-ml-px relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-500 hover:text-gray-400 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-500 transition ease-in-out duration-150" aria-label="Next">
+          <!-- Heroicon name: chevron-right -->
+          <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+          </svg>
+        </a>
+      </nav>
+</div>
+        </div>
+    </div>
+    </div>
+
+
+   
+</div>
+
+
+
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="/static/A/style.css">
+</head>
+
+<body>
+     <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__lists">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">about us</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">feedback</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">community</a>
+          </li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">trust, safty & security</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">help & support</a>
+          </li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">terms of service</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">privacy policy</a>
+          </li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">about us</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">feedback</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">community</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__socials">
+        <span>Follow Us</span>
+        <div class="footer__icons">
+          <a href="#">
+            <svg class="footer__icon">
+              <use xlink:href="/static/A/icons/socials.svg#icon-facebook-with-circle"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer__icon">
+              <use xlink:href="/static/A/icons/socials.svg#icon-instagram-with-circle"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer__icon">
+              <use xlink:href="/static/A/icons/socials.svg#icon-linkedin-with-circle"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer__icon">
+              <use xlink:href="/static/A/icons/socials.svg#icon-twitter-with-circle"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>
+          &copy; 2022 - <span id="copy-year"></span>
+          <script>
+            document.getElementById("copy-year").textContent =
+              new Date().getFullYear();
+          </script>
+          Lancer point® Global Inc
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+ 
+
+ 
+
+<script>
+console.log('gfds')
+</script>
+
+<script>
+
+    
+    console.log("lsdflkslvkds")
+        function MultiSelectTag(e, t = {
+            shadow: !1,
+            rounded: !0
+        }) {
+            var n = null,
+                d = null,
+                l = null,
+                a = null,
+                s = null,
+                i = null,
+                o = null,
+                c = null,
+                r = null,
+                u = null,
+                p = null,
+                v = null,
+                m = new DOMParser();
+
+            function h(e = null) {
+                for (var t of ((v.innerHTML = ""), d))
+                    if (t.selected) !w(t.value) && f(t);
+                    else {
+                        const n = document.createElement("li");
+                        (n.innerHTML = t.label),
+                        (n.dataset.value = t.value),
+                        e && t.label.toLowerCase().startsWith(e.toLowerCase()) ?
+                            v.appendChild(n) :  e || v.appendChild(n);
+                    }
+            }
+
+            function f(e) {
+                const t = document.createElement("div");
+                t.classList.add("item-container");
+                const n = document.createElement("div");
+                n.classList.add("item-label"),
+                    (n.innerHTML = e.label),
+                    (n.dataset.value = e.value);
+                const l = new DOMParser().parseFromString(
+                    '<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="item-close-svg">\n                <line x1="18" y1="6" x2="6" y2="18"></line>\n                <line x1="6" y1="6" x2="18" y2="18"></line>\n                </svg>',
+                    "image/svg+xml"
+                ).documentElement;
+                l.addEventListener("click", (t) => {
+                        (d.find((t) => t.value == e.value).selected = !1), g(e.value), h(), E();
+                    }),
+                    t.appendChild(n),
+                    t.appendChild(l),
+                    o.append(t);
+            }
+
+            function L() {
+                for (var e of v.children)
+                    e.addEventListener("click", (e) => {
+                        (d.find((t) => t.value == e.target.dataset.value).selected = !0),
+                        (r.value = null),
+                        h(),
+                            E(),
+                            r.focus();
+                    });
+            }
+
+            function w(e) {
+                for (var t of o.children)
+                    if (
+                        !t.classList.contains("input-body") &&
+                        t.firstChild.dataset.value == e
+                    )
+                        return !0;
+                return !1;
+            }
+
+            function g(e) {
+                for (var t of o.children)
+                    t.classList.contains("input-body") ||
+                    t.firstChild.dataset.value != e ||
+                    o.removeChild(t);
+            }
+
+            function E() {
+                for (var e = 0; e < d.length; e++) n.options[e].selected = d[e].selected;
+            }
+            (n = document.getElementById(e)),
+            (function () {
+                (d = [...n.options].map((e) => ({
+                    value: e.value,
+                    label: e.label,
+                    selected: e.selected,
+                }))),
+                n.classList.add("hidden"),
+                    (l = document.createElement("div")).classList.add("mult-select-tag"),
+                    (a = document.createElement("div")).classList.add("wrapper"),
+                    (i = document.createElement("div")).classList.add("body"),
+                    t.shadow && i.classList.add("shadow"),
+                    t.rounded && i.classList.add("rounded"),
+                    (o = document.createElement("div")).classList.add("input-container"),
+                    (r = document.createElement("input")).classList.add("input"),
+                    (r.placeholder = `${t.placeholder || "Search..."}`),
+                    (c = document.createElement("inputBody")).classList.add("input-body"),
+                    c.append(r),
+                    i.append(o),
+                    (s = document.createElement("div")).classList.add("btn-container"),
+                    ((u = document.createElement("button")).type = "button"),
+                    s.append(u);
+                const e = m.parseFromString(
+                    '<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n            <polyline points="18 15 12 21 6 15"></polyline></svg>',
+                    "image/svg+xml"
+                ).documentElement;
+                u.append(e),
+                    i.append(s),
+                    a.append(i),
+                    (p = document.createElement("div")).classList.add("drawer", "hidden"),
+                    t.shadow && p.classList.add("shadow"),
+                    t.rounded && p.classList.add("rounded"),
+                    p.append(c),
+                    (v = document.createElement("ul")),
+                    p.appendChild(v),
+                    l.appendChild(a),
+                    l.appendChild(p),
+                    n.nextSibling ?
+                    n.parentNode.insertBefore(l, n.nextSibling) :
+                    n.parentNode.appendChild(l);
+            })(),
+            h(),
+                L(),
+                E(),
+                u.addEventListener("click", () => {
+                    p.classList.contains("hidden") &&
+                        (h(), L(), p.classList.remove("hidden"), r.focus());
+                }),
+                r.addEventListener("keyup", (e) => {
+                    h(e.target.value), L();
+                }),
+                r.addEventListener("keydown", (e) => {
+                    if ("Backspace" === e.key && !e.target.value && o.childElementCount > 1) {
+                        const e = i.children[o.childElementCount - 2].firstChild;
+                        (d.find((t) => t.value == e.dataset.value).selected = !1),
+                        g(e.dataset.value),
+                            E();
+                    }
+                }),
+                window.addEventListener("click", (e) => {
+                    l.contains(e.target) || p.classList.add("hidden");
+                });
+        }
+
+
+
+        new MultiSelectTag('SkillsJobs') // id
+</script>
+
+<script src="/static/js/dropdown_nav.js"></script>
+
+    <script src="/static/js/nav-header.js"></script>
+</body>
+
+</html>

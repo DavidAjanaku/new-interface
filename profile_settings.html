@@ -1,0 +1,892 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/static/images/logos/1615836169185_lancerspoint-logo-2.png" type="image/x-icon">
+        
+        
+    <link rel="shortcut icon" href="/static/images/lancerspoint-2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        
+
+    
+<link rel="stylesheet" href="/static/settings/css/styles.css">
+<script src="/static/settings/js/script.js" type="module"></script>
+<link rel="stylesheet" href="/static/settings/css/style.css">
+
+
+
+<style>
+    @media only screen and (max-width: 600px) {
+        .user-settings-main {
+
+            height: 180vh;
+        }
+    }
+
+    .mult-select-tag {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+        --tw-shadow-color: 0 1px 3px 0 var(--tw-shadow-color),
+            0 1px 2px -1px var(--tw-shadow-color);
+        --border-color: rgb(218, 221, 224);
+        font-family: Verdana, sans-serif;
+    }
+
+    .mult-select-tag .wrapper {
+        width: 100%;
+    }
+
+    .mult-select-tag .body {
+        display: flex;
+        border: 1px solid var(--border-color);
+        background: #fff;
+        min-height: 5.15rem;
+        width: 100%;
+        min-width: 14rem;
+    }
+
+    .mult-select-tag .input-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 auto;
+        padding: 0.1rem;
+    }
+
+    .mult-select-tag .input-body {
+        display: flex;
+        width: 100%;
+    }
+
+    .mult-select-tag .input {
+        flex: 1;
+        background: 0 0;
+        border-radius: 0.25rem;
+        padding: 0.45rem;
+        margin: 10px;
+        color: #2d3748;
+        outline: 0;
+        border: 1px solid var(--border-color);
+    }
+
+    .mult-select-tag .btn-container {
+        color: #e2ebf0;
+        padding: 0.5rem;
+        display: flex;
+        border-left: 1px solid var(--border-color);
+    }
+
+    .mult-select-tag button {
+        cursor: pointer;
+        width: 100%;
+        color: #718096;
+        outline: 0;
+        height: 100%;
+        border: none;
+        padding: 0;
+        background: 0 0;
+        background-image: none;
+        -webkit-appearance: none;
+        text-transform: none;
+        margin: 0;
+    }
+
+    .mult-select-tag button:first-child {
+        width: 1rem;
+        height: 90%;
+    }
+
+    .mult-select-tag .drawer {
+        position: absolute;
+        background: #fff;
+        max-height: 15rem;
+        z-index: 40;
+        top: 98%;
+        width: 100%;
+        overflow-y: scroll;
+        border: 1px solid var(--border-color);
+        border-radius: 0.25rem;
+    }
+
+    .mult-select-tag ul {
+        list-style-type: none;
+        padding: 0.5rem;
+        margin: 0;
+    }
+
+    .mult-select-tag ul li {
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
+    }
+
+    .mult-select-tag ul li:hover {
+        background: rgb(243 244 246);
+    }
+
+    .mult-select-tag .item-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #2c7a7b;
+        padding: 0.2rem 0.4rem;
+        margin: 0.2rem;
+        font-weight: 500;
+        border: 1px solid #81e6d9;
+        background: #e6fffa;
+        border-radius: 9999px;
+    }
+
+    .mult-select-tag .item-label {
+        max-width: 100%;
+        line-height: 1;
+        font-size: 1em;
+        font-weight: 400;
+        flex: 0 1 auto;
+        color: #2c7a7b;
+    }
+
+    .mult-select-tag .item-close-container {
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: row-reverse;
+    }
+
+    .mult-select-tag .item-close-svg {
+        width: 1rem;
+        margin-left: 0.5rem;
+        height: 1rem;
+        cursor: pointer;
+        border-radius: 9999px;
+        display: block;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .mult-select-tag .shadow {
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+            var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+
+    .mult-select-tag .rounded {
+        border-radius: 0.375rem;
+    }
+</style>
+
+
+</head>
+<body>
+    
+    
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/static/header/css/style.css">
+    
+</head>
+
+<body>
+    <input type="checkbox" id="toggle" hidden>
+    <label class="toggle-btn" for="toggle">
+        <span class="line"></span>
+    </label>
+    <header class="header-alt">
+        <a href="/">
+            <img src="/static/header/images/logo.png" alt="logo" class="logo">
+        </a>
+
+        
+            
+        <form class="header-alt__search">
+            <input type="text" placeholder="Search jobs" class="header-alt__input">
+            <button type="submit" class="header-alt__search-btn">
+                <span class="header-alt__icon material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </form>
+
+        <nav class="header-alt__nav">
+            <a href="/lancer/search-jobs/" class="header-alt__link">Search for job</a>
+            <a href="/lancer/projects/listings/" class="header-alt__link">Work Diary</a>
+            <a href="/chat/chat-contact/" class="header-alt__link">Messages</a>
+            <a href="/account/logout/" class="header-alt__link">Log-out</a>
+        </nav>        
+        <a href="/account/contact-settings/">
+            <div class="header-alt__profile">
+                <img src="/media/users/2022/12/26/31AA18F4-EDBC-441D-A034-8E3BE1BED4A4.jpeg" alt="profile photo" class="header-alt__profile-img">
+            </div>
+        </a>
+        
+
+
+    </header>
+
+</body>
+
+</html>
+<div class="user-settings-main">
+    <div class="user-settings-container">
+                    <div class="side-nav">
+                <h3>User Settings</h3>
+                <ul>
+                    <a href="/account/contact-settings/">
+                        <li >Contact Info</li>
+                    </a>
+                    <a href="/lancer/my-profile-page/">
+                        <li >My Profile</li>
+                    </a>
+                    <a href="/account/profile-settings/">
+                        <li  class="active" >Profile Settings</li>
+                    </a>
+                    <a href="/account/get-paid/">
+                        <li  >Get Paid</li>
+                    </a>
+                   <a href="/account/password_reset/">
+                        <li >Password Reset</li>
+                    </a>
+                </ul>
+            </div>
+
+        <div class="get-paid-container password-and-security-container">
+
+            <h1>Profile Settings</h1>
+
+              <div class="dropdown-container">
+                <div class="selected-container">
+                    <span>Contact Info</span>
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <div class="dropdown-list-container ">
+                     <ul>
+                    <a href="/account/contact-settings/">
+                        <li >Contact Info</li>
+                    </a>
+                    <a href="/lancer/my-profile-page/">
+                        <li >My Profile</li>
+                    </a>
+                    <a href="/account/profile-settings/">
+                        <li  class="active" >Profile Settings</li>
+                    </a>
+                    <a href="/account/get-paid/">
+                        <li  >Get Paid</li>
+                    </a>
+                    <a href="/account/password_reset/">
+                        <li >Password Reset</li>
+                    </a>
+                </ul>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            
+            <!-- MODAL AND FORM -->
+            <div style="margin-top: 30px;" class="balance-container">
+                <div class="modal hidden">
+                    <figure class="form">
+                        <div class="form__section">
+                            <div class="form__group flex">
+                                <span class="modal__times">&times;</span>
+                            </div>
+                        </div>
+
+                        <div class="form__section">
+                            <div class="card">
+                                <h2 class="card__title">profile photo</h2>
+
+                                <div class="card__body">
+                                    <form method="POST" action="." enctype="multipart/form-data">
+                                        <input type="hidden" name="csrfmiddlewaretoken" value="FmN3m5jhmhqvHsPhN0U8VfwN2asPwjKkK7ZMGLynrFjPJLzmX7SMOzKgPHUS62Vy">
+                                        <div class="form__group form__group--flex">
+                                            <div class="form__img-box">
+                                                <img src="/media/users/2022/12/26/31AA18F4-EDBC-441D-A034-8E3BE1BED4A4.jpeg" alt="profile photo"
+                                                    class="form__img">
+                                            </div>
+                                            <small class="form__username">Lancer
+                                                Free </small>
+                                        </div>
+
+                                        <div class="form__group">
+                                            Currently: <a href="/media/users/2022/12/26/31AA18F4-EDBC-441D-A034-8E3BE1BED4A4.jpeg">users/2022/12/26/31AA18F4-EDBC-441D-A034-8E3BE1BED4A4.jpeg</a>
+<input type="checkbox" name="photo-clear" id="photo-clear_id">
+<label for="photo-clear_id">Clear</label><br>
+Change:
+<input type="file" name="photo" accept="image/*" id="id_photo">
+                                            <div class="form__input-group">
+
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="form__group">
+                                            <div>
+                                                <h3 class="form__title">Hourly Rate</h3>
+                                                <div class="tool-tip">
+                                                    <i class="tool-tip__icon">i</i>
+                                                    <p class="tool-tip__info">
+                                                        <span class="form__title-desc">
+                                                            please note that your updated hourly rate only applies to
+                                                            new contracts.
+                                                            <b style="color: #10d876;">
+                                                                Lancer point fee will be 10% of your total fee
+                                                            </b>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <input type="number" name="rate" value="100000.16" step="0.01" min="10" placeholder="$10" class="form__input" id="id_rate">
+                                        </div>
+                                        <div class="form__group">
+                                            <div>
+                                                <h3 class="form__title">Skills</h3>
+                                                <div class="tool-tip">
+                                                    <i class="tool-tip__icon">i</i>
+                                                    <p class="tool-tip__info">
+                                                        <span class="form__title-desc">
+                                                            Select your Skill
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <form action="">
+                                                <div>
+                                                    <label for="city">
+                                                        Skills
+                                                    </label>
+                                                    <select name="skill" id="SkillsJobs" name="Skills" required multiple>
+  <option value="1">python</option>
+
+  <option value="2">demo</option>
+
+</select>
+                                            </form>
+                                        </div>
+
+                                        <div class="form__group">
+                                            <button type="submit" class="form__btn"> Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <h2 class="card__title">profile overview</h2>
+                                <div class="card__body">
+                                    <form method="POST" action=".">
+                                        <input type="hidden" name="csrfmiddlewaretoken" value="FmN3m5jhmhqvHsPhN0U8VfwN2asPwjKkK7ZMGLynrFjPJLzmX7SMOzKgPHUS62Vy">
+                                        <div class="form__group">
+                                            <div>
+                                                <h3 class="form__title">Title</h3>
+                                                <div class="tool-tip">
+                                                    <i class="tool-tip__icon">i</i>
+                                                    <p class="tool-tip__info">
+                                                        <span class="form__title-desc">
+                                                            Enter a single sentence to describe your professional
+                                                            skill/experience (e.g. )
+                                                            Full stack Java and Javascript developer with 5 years of
+                                                            experience
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <input type="text" name="title" value="Software DEv" maxlength="300" placeholder="Lancer title" class="form__input" id="id_title">
+                                        </div>
+
+                                        <div class="form__group">
+                                            <div>
+                                                <h3 class="form__title">Overview</h3>
+                                                <div class="tool-tip">
+                                                    <i class="tool-tip__icon">i</i>
+                                                    <p class="tool-tip__info">
+                                                        <span class="form__title-desc">
+                                                            Use this space to show clients you have the skills and
+                                                            experience they're looking for. <br /><br />
+                                                            Describe your strengths and skills <br />
+                                                            Highlight projects, accomplishments and education <br />
+                                                            Keep it short and make sure it's error-free <br />
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <textarea name="overview" cols="40" rows="10" maxlength="5000" placeholder="Describe yourself to the world" class="form__area" id="id_overview">
+The best lancer on this app</textarea>
+                                            
+                                        </div>
+
+                                        <div class="form__group">
+                                            <div>
+                                                <h3 class="form__title">Available Hours/Week</h3>
+                                            </div>
+
+                                            <input type="number" name="hours" value="28" min="2" placeholder="40hrs/wk" class="form__input" id="id_hours">
+                                        </div>
+
+                                        <div class="form__group">
+                                            <button type="submit" class="form__btn"> Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form__section">
+                            <div class="card">
+                                <h2 class="card__title">education</h2>
+                                <div class="card__body">
+                                    <form method="POST" action=".">
+                                        <input type="hidden" name="csrfmiddlewaretoken" value="FmN3m5jhmhqvHsPhN0U8VfwN2asPwjKkK7ZMGLynrFjPJLzmX7SMOzKgPHUS62Vy">
+                                        <div class="form__group">
+                                            <h3 class="form__title">School Name</h3>
+                                            <input type="text" name="school_name" maxlength="100" placeholder="School Name" class="form__input" required id="id_school_name">
+                                            
+                                            <div class="form__input-cont">
+                                                <div>
+                                                    <h3 class="form__title">From</h3>
+                                                    <input type="date" name="start_date" class="form__input" required id="id_start_date">
+                                                    
+                                                </div>
+
+                                                <div>
+                                                    <h3 class="form__title">To</h3>
+                                                    <input type="date" name="end_date" class="form__input" id="id_end_date">
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form__group">
+                                            <h3 class="form__title">Degree (optional)</h3>
+                                            <select name="degree" class="form__input" required id="id_degree">
+  <option value="" selected>---------</option>
+
+  <option value="bsc">Barchelor&#x27;s Degree</option>
+
+  <option value="asd">Associates Degree</option>
+
+</select>
+                                            
+                                        </div>
+
+                                        <div class="form__group">
+                                            <h3 class="form__title">Area of study (optional)</h3>
+                                            <input type="text" name="area_of_study" maxlength="200" class="form__input" required id="id_area_of_study">
+                                            
+                                        </div>
+                                        <div class="form__group">
+                                            <h3 class="form__title">Description</h3>
+                                            <input type="text" name="description" maxlength="5000" class="form__input" required id="id_description">
+                                            
+                                        </div>
+
+
+                                        <div class="form__group">
+                                            <button type="submit" class="form__btn"> Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </figure>
+                </div>
+
+                <!-- OVERLAY -->
+                <div class="overlay hidden"></div>
+
+                <!-- MAIN CONTENT -->
+                <main class="profile-main">
+                    <figure class="profile">
+                        <header class="profile__header">
+                            <div class="profile__header--left">
+                                <div class="profile__photo-box">
+                                    <img src="/media/users/2022/12/26/31AA18F4-EDBC-441D-A034-8E3BE1BED4A4.jpeg" alt="profile photo" class="profile__photo">
+                                </div>
+                                <h1 class="profile__name">Lancer - Free
+                                </h1>
+                                <span class="profile__locDate">
+                                    <span class="profile__location">SatelliteTown, NG</span>
+                                    <span>-</span>
+                                    <span class="profile__date"> 27th December 2022 12:29</span>
+                                </span>
+                            </div>
+                            <nav class="profile__header--right">
+                                <button class="profile__btn">Edit Profile</button>
+                                <a href="/lancer/my-profile-page/public/iamlancer">
+                                    <button class="profile__btn profile__btn--solid"> View as public</button>
+                                </a>
+                            </nav>
+                        </header>
+
+                        <div class="profile__body">
+                            <div class="profile__body--left">
+                                <div class="profile__group">
+                                    <h3 class="profile__title">Hours</h3>
+                                    <p class="profile__paragraph">
+                                        <b>Available</b>
+                                        <span>28 hrs/wk</span>
+                                    </p>
+                                </div>
+                                <div class="profile__group">
+                                    <h3 class="profile__title">Education</h3>
+                                    <p class="profile__paragraph">
+                                        <ul class="profile__list">
+                                            
+                                            <li class="profile__item">
+                                                <span> Barchelor&#x27;s Degree </span>
+                                                <br>
+                                                <span>Dec. 26, 2022
+                                                    -
+                                                    
+                                                    Dec. 31, 2022
+                                                    
+
+                                                </span>
+                                            </li>
+                                            
+
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="profile__body--right">
+                                <div class="profile__group">
+                                    <h3 class="profile__title">Title</h3>
+                                    <p class="profile__paragraph">
+                                        Software DEv
+                                    </p>
+                                </div>
+                                <div class="profile__group">
+                                    <h3 class="profile__title">Self Overview</h3>
+                                    <p class="profile__paragraph">
+                                        
+                                        The best lancer on this app
+                                        
+                                    </p>
+                                </div>
+                                <div class="profile__group">
+                                    <h3 class="profile__title">Hourly Rate</h3>
+                                    <p class="profile__paragraph">
+                                        100000.16 NGN/hr
+                                    </p>
+                                </div>
+                                <div class="profile__group">
+                                    <h3 class="profile__title">Skills</h3>
+                                    <ul class="profile__list">
+                                        
+                                        <span class="profile__skill">python</span>
+                                        
+                                        <span class="profile__skill">demo</span>
+                                        
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </main>
+
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="/static/A/style.css">
+</head>
+
+<body>
+     <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__lists">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">about us</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">feedback</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">community</a>
+          </li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">trust, safty & security</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">help & support</a>
+          </li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">terms of service</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">privacy policy</a>
+          </li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">about us</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">feedback</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">community</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__socials">
+        <span>Follow Us</span>
+        <div class="footer__icons">
+          <a href="#">
+            <svg class="footer__icon">
+              <use xlink:href="/static/A/icons/socials.svg#icon-facebook-with-circle"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer__icon">
+              <use xlink:href="/static/A/icons/socials.svg#icon-instagram-with-circle"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer__icon">
+              <use xlink:href="/static/A/icons/socials.svg#icon-linkedin-with-circle"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer__icon">
+              <use xlink:href="/static/A/icons/socials.svg#icon-twitter-with-circle"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>
+          &copy; 2022 - <span id="copy-year"></span>
+          <script>
+            document.getElementById("copy-year").textContent =
+              new Date().getFullYear();
+          </script>
+          Lancer point® Global Inc
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+ 
+
+ 
+
+<script>
+console.log('gfds')
+</script>
+
+<script>
+
+    
+    console.log("lsdflkslvkds")
+        function MultiSelectTag(e, t = {
+            shadow: !1,
+            rounded: !0
+        }) {
+            var n = null,
+                d = null,
+                l = null,
+                a = null,
+                s = null,
+                i = null,
+                o = null,
+                c = null,
+                r = null,
+                u = null,
+                p = null,
+                v = null,
+                m = new DOMParser();
+
+            function h(e = null) {
+                for (var t of ((v.innerHTML = ""), d))
+                    if (t.selected) !w(t.value) && f(t);
+                    else {
+                        const n = document.createElement("li");
+                        (n.innerHTML = t.label),
+                        (n.dataset.value = t.value),
+                        e && t.label.toLowerCase().startsWith(e.toLowerCase()) ?
+                            v.appendChild(n) :  e || v.appendChild(n);
+                    }
+            }
+
+            function f(e) {
+                const t = document.createElement("div");
+                t.classList.add("item-container");
+                const n = document.createElement("div");
+                n.classList.add("item-label"),
+                    (n.innerHTML = e.label),
+                    (n.dataset.value = e.value);
+                const l = new DOMParser().parseFromString(
+                    '<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="item-close-svg">\n                <line x1="18" y1="6" x2="6" y2="18"></line>\n                <line x1="6" y1="6" x2="18" y2="18"></line>\n                </svg>',
+                    "image/svg+xml"
+                ).documentElement;
+                l.addEventListener("click", (t) => {
+                        (d.find((t) => t.value == e.value).selected = !1), g(e.value), h(), E();
+                    }),
+                    t.appendChild(n),
+                    t.appendChild(l),
+                    o.append(t);
+            }
+
+            function L() {
+                for (var e of v.children)
+                    e.addEventListener("click", (e) => {
+                        (d.find((t) => t.value == e.target.dataset.value).selected = !0),
+                        (r.value = null),
+                        h(),
+                            E(),
+                            r.focus();
+                    });
+            }
+
+            function w(e) {
+                for (var t of o.children)
+                    if (
+                        !t.classList.contains("input-body") &&
+                        t.firstChild.dataset.value == e
+                    )
+                        return !0;
+                return !1;
+            }
+
+            function g(e) {
+                for (var t of o.children)
+                    t.classList.contains("input-body") ||
+                    t.firstChild.dataset.value != e ||
+                    o.removeChild(t);
+            }
+
+            function E() {
+                for (var e = 0; e < d.length; e++) n.options[e].selected = d[e].selected;
+            }
+            (n = document.getElementById(e)),
+            (function () {
+                (d = [...n.options].map((e) => ({
+                    value: e.value,
+                    label: e.label,
+                    selected: e.selected,
+                }))),
+                n.classList.add("hidden"),
+                    (l = document.createElement("div")).classList.add("mult-select-tag"),
+                    (a = document.createElement("div")).classList.add("wrapper"),
+                    (i = document.createElement("div")).classList.add("body"),
+                    t.shadow && i.classList.add("shadow"),
+                    t.rounded && i.classList.add("rounded"),
+                    (o = document.createElement("div")).classList.add("input-container"),
+                    (r = document.createElement("input")).classList.add("input"),
+                    (r.placeholder = `${t.placeholder || "Search..."}`),
+                    (c = document.createElement("inputBody")).classList.add("input-body"),
+                    c.append(r),
+                    i.append(o),
+                    (s = document.createElement("div")).classList.add("btn-container"),
+                    ((u = document.createElement("button")).type = "button"),
+                    s.append(u);
+                const e = m.parseFromString(
+                    '<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">\n            <polyline points="18 15 12 21 6 15"></polyline></svg>',
+                    "image/svg+xml"
+                ).documentElement;
+                u.append(e),
+                    i.append(s),
+                    a.append(i),
+                    (p = document.createElement("div")).classList.add("drawer", "hidden"),
+                    t.shadow && p.classList.add("shadow"),
+                    t.rounded && p.classList.add("rounded"),
+                    p.append(c),
+                    (v = document.createElement("ul")),
+                    p.appendChild(v),
+                    l.appendChild(a),
+                    l.appendChild(p),
+                    n.nextSibling ?
+                    n.parentNode.insertBefore(l, n.nextSibling) :
+                    n.parentNode.appendChild(l);
+            })(),
+            h(),
+                L(),
+                E(),
+                u.addEventListener("click", () => {
+                    p.classList.contains("hidden") &&
+                        (h(), L(), p.classList.remove("hidden"), r.focus());
+                }),
+                r.addEventListener("keyup", (e) => {
+                    h(e.target.value), L();
+                }),
+                r.addEventListener("keydown", (e) => {
+                    if ("Backspace" === e.key && !e.target.value && o.childElementCount > 1) {
+                        const e = i.children[o.childElementCount - 2].firstChild;
+                        (d.find((t) => t.value == e.dataset.value).selected = !1),
+                        g(e.dataset.value),
+                            E();
+                    }
+                }),
+                window.addEventListener("click", (e) => {
+                    l.contains(e.target) || p.classList.add("hidden");
+                });
+        }
+
+
+
+        new MultiSelectTag('SkillsJobs') // id
+</script>
+
+<script src="/static/js/dropdown_nav.js"></script>
+
+    <script src="/static/js/nav-header.js"></script>
+</body>
+
+</html>

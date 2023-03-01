@@ -1,0 +1,331 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Withdraw</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="cleintSettings.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/static/A/assets/style.css">
+  <link rel="stylesheet" href="/static/A/style.css">
+  <link rel="stylesheet" href="/static/css/user-settings.css">
+</head>
+
+<body>
+  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/static/header/css/style.css">
+    
+</head>
+
+<body>
+    <input type="checkbox" id="toggle" hidden>
+    <label class="toggle-btn" for="toggle">
+        <span class="line"></span>
+    </label>
+    <header class="header-alt">
+        <a href="/">
+            <img src="/static/header/images/logo.png" alt="logo" class="logo">
+        </a>
+
+        
+            
+        <form class="header-alt__search">
+            <input type="text" placeholder="Search jobs" class="header-alt__input">
+            <button type="submit" class="header-alt__search-btn">
+                <span class="header-alt__icon material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </form>
+
+        <nav class="header-alt__nav">
+            <a href="/lancer/search-jobs/" class="header-alt__link">Search for job</a>
+            <a href="/lancer/projects/listings/" class="header-alt__link">Work Diary</a>
+            <a href="/chat/chat-contact/" class="header-alt__link">Messages</a>
+            <a href="/account/logout/" class="header-alt__link">Log-out</a>
+        </nav>        
+        <a href="/account/contact-settings/">
+            <div class="header-alt__profile">
+                <img src="/media/users/2022/12/26/31AA18F4-EDBC-441D-A034-8E3BE1BED4A4.jpeg" alt="profile photo" class="header-alt__profile-img">
+            </div>
+        </a>
+        
+
+
+    </header>
+
+</body>
+
+</html>
+  <div class="user-settings-main">
+    <div class="user-settings-container">
+                  <div class="side-nav">
+                <h3>User Settings</h3>
+                <ul>
+                    <a href="/account/contact-settings/">
+                        <li >Contact Info</li>
+                    </a>
+                    <a href="/lancer/my-profile-page/">
+                        <li >My Profile</li>
+                    </a>
+                    <a href="/account/profile-settings/">
+                        <li  >Profile Settings</li>
+                    </a>
+                    <a href="/account/get-paid/">
+                        <li  class="active" >Get Paid</li>
+                    </a>
+                   <a href="/account/password_reset/">
+                        <li >Password Reset</li>
+                    </a>
+                </ul>
+            </div>
+
+      <div class="get-paid-container password-and-security-container">
+
+        <h1>Payment</h1>
+
+          <div class="dropdown-container">
+                <div class="selected-container">
+                    <span>Contact Info</span>
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <div class="dropdown-list-container ">
+                     <ul>
+                    <a href="/account/contact-settings/">
+                        <li >Contact Info</li>
+                    </a>
+                    <a href="/lancer/my-profile-page/">
+                        <li >My Profile</li>
+                    </a>
+                    <a href="/account/profile-settings/">
+                        <li  >Profile Settings</li>
+                    </a>
+                    <a href="/account/get-paid/">
+                        <li  class="active" >Get Paid</li>
+                    </a>
+                    <a href="/account/password_reset/">
+                        <li >Password Reset</li>
+                    </a>
+                </ul>
+                    </ul>
+                </div>
+            </div>
+
+        <div style="margin-top: 30px;" class="balance-container">
+
+
+          <div class="container">
+            <h1>Withdrawal Page </h1>
+
+
+            <form id="myForm" id="application">
+              <label class="withdraw amount">Withdraw To </label>
+              <input type="text" class="withdraw-options  bankCodes bank" id="BankName" list="banks"
+                placeholder="Bank name">
+              <datalist id="banks"></datalist>
+
+
+
+              <label class="  ">Amount(NGN)</label>
+              <p class="bank_error">
+
+              </p>
+              <input type="number" id="Amount" class="withdraw-options" placeholder=" Min:1" min="1"
+                pattern="[0-9]{10}">
+
+              <label for="">Account Number</label>
+              <input type="number" id="AccountNumber" min="0" placeholder="Account Number" class="withdraw-options">
+
+
+              <div class="btn-container">
+                <input type="submit" class="submit-btn  btn-open" onclick="mode()">
+              </div>
+
+
+            </form>
+
+            <section class="modal hidden">
+              <div class="flex">
+
+                <button class="btn-close">⨉</button>
+              </div>
+              <div>
+                <h3>Confirm to Withdraw</h3>
+
+              </div>
+
+              <div class="account_details">
+                <div class="account_info">
+                  <span><b>Amount(NGN)</b></span>
+                  <span class="account_amount"> </span>
+                </div>
+                <div class="account_info">
+                  <span><b> Bank Name</b></span>
+                  <span class="account_bank"> </span>
+                </div>
+                <div class="account_info">
+                  <span><b> Account Number</b></span>
+                  <span class="account_number"></span>
+                </div>
+                <div class="account_info">
+                  <span><b> Account Name</b></span>
+                  <span class="user_name"></span>
+                </div>
+              </div>
+
+
+              <p>Note: THe money will transfer to your bank account</p>
+
+              <input type="submit" class="btn  successful" value="submit">
+            </section>
+
+            <div class="overlay hidden"></div>
+            <div class="contents">
+              <p class="balance">Balance(NGN):0.36</p>
+              <b>
+                <p class="w-balance">Withdrawable Balance(NGN): 0.36</p>
+              </b>
+            </div>
+            <div class="contents-2">
+              <p>1. Minimum per transaction is NGN 1.00.</p>
+              <p>2. Maximum per transcation is NGN 9,999,999.00.</p>
+              <p>3. Withdrawal is free, no transcation fees.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+      
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="/static/A/style.css">
+</head>
+
+<body>
+     <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__lists">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">about us</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">feedback</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">community</a>
+          </li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">trust, safty & security</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">help & support</a>
+          </li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">terms of service</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">privacy policy</a>
+          </li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">about us</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">feedback</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">community</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__socials">
+        <span>Follow Us</span>
+        <div class="footer__icons">
+          <a href="#">
+            <svg class="footer__icon">
+              <use xlink:href="/static/A/icons/socials.svg#icon-facebook-with-circle"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer__icon">
+              <use xlink:href="/static/A/icons/socials.svg#icon-instagram-with-circle"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer__icon">
+              <use xlink:href="/static/A/icons/socials.svg#icon-linkedin-with-circle"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer__icon">
+              <use xlink:href="/static/A/icons/socials.svg#icon-twitter-with-circle"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>
+          &copy; 2022 - <span id="copy-year"></span>
+          <script>
+            document.getElementById("copy-year").textContent =
+              new Date().getFullYear();
+          </script>
+          Lancer point® Global Inc
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+      <script src="/static/A/assets/modal.js"></script>
+
+
+      <script>
+        const selected = document.querySelector(".selected-container");
+        const dropdownList = document.querySelector(".dropdown-list-container");
+
+        selected.addEventListener("click", () => {
+          dropdownList.classList.toggle("dropdown-active");
+        })
+      </script>
+      <script src="/static/A/assets/script.js"></script>
+      <script src="/static/A/assets/authentication.js"></script>
+</body>
+
+</html>
