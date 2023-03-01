@@ -31,6 +31,7 @@
     outline: none;
     border: none;
     padding: 25px 10px;
+    font-size: 16px;
 }
 
 .bg-green{
@@ -53,6 +54,9 @@
     color: rgba(56,161,105,var(--text-opacity));
     padding-left: 1rem;
     padding-right: 1rem;
+    background: none;
+    border: 1px solid;
+    padding: 5px;
 }
 
 .col-2{
@@ -78,7 +82,18 @@
     background-color: rgba(203,213,224,var(--bg-opacity));
     margin: 10px;
     align-items: center;
+    font-weight: 400;
 }
+
+.px-3 h3{
+    font-weight: 400;
+}
+
+
+.job-pages{
+    font-weight: 400;
+}
+
 
 .text-green a{
     --text-opacity: 1;
@@ -156,6 +171,11 @@ select{
     margin-right:10px ;
 }
 
+
+.text-base{
+    font-weight: 400;
+}
+
 @media screen and (max-width: 800px) {
     .search__job--box {
         width: 100%;
@@ -170,3 +190,4 @@ select{
         margin-bottom: 20px;
     }
   }
+
