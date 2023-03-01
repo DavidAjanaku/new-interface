@@ -44,6 +44,7 @@
 
 .search_icon{
     font-size: 2rem;
+    color: white;
 }
 
 .bg-white{
@@ -155,6 +156,17 @@ select{
     margin-right:10px ;
 }
 
-@media screen {
-    
-}
+@media screen and (max-width: 800px) {
+    .search__job--box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .search_container__flex{
+        margin: 20px;
+    }
+
+    .job_found_value{
+        margin-bottom: 20px;
+    }
+  }
